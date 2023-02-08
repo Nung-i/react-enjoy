@@ -1,19 +1,19 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 import './App.css';
+import Content from './component/layout/Content';
 
 import Header from "./component/layout/Header";
-import SnowSelf from "./toy/snow/SnowSelf";
 
 function App() {
 return (
 	<>
 		<BrowserRouter>
+			{/* 헤더 */}
 			<Header/>
-			<Routes>
-				<Route path='/' element={<div>메인입니다.</div>}/>
-				<Route path='/toy' element={<SnowSelf/>}/>
-			</Routes>
+			{/* 컨텐츠 */}
+			<Content/>
+
 		</BrowserRouter>
 	</>
 );

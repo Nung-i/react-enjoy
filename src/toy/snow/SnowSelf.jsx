@@ -17,7 +17,7 @@ function SnowSelf(){
 	 * 
 	 * @param {int} size 눈의 크기 | 범위[20 ~ 50]
 	 * @param {float} opacity 눈의 투명도 | 범위[0.3 ~ 0.8]
-	 * @param {float} x 눈이 떨어질 위치 % | 범위[0 ~ 100] | 화면 왼쪽 기준
+	 * @param {float} x 눈이 떨어질 위치 % | 범위[10 ~ 90] | 화면 왼쪽 기준
 	 * @param {float} speed 눈이 떨어지는 속도 | 범위[5 ~ 15] | 작을 수록 빠름
 	 */
 	const makeSnow = (size, opacity, x, speed) => {
@@ -42,7 +42,7 @@ function SnowSelf(){
 		setTimeout(() => {
 			const size = Number(getRandomArbitraryInclusive(20, 50).toFixed(1));
 			const opacity = Number(getRandomArbitraryInclusive(0.3, 0.8).toFixed(1));
-			const x = Number(getRandomArbitraryInclusive(0, 100).toFixed(2));
+			const x = Number(getRandomArbitraryInclusive(3, 98).toFixed(2));
 			const speed = Number(getRandomArbitraryInclusive(5, 15).toFixed(2));
 
 			makeSnow(size, opacity, x, speed);
