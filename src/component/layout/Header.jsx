@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import headerStyle from "./headerStyle.module.css";
 
 function Header(){
-	const logo = <Link to='/'><img alt='profile' src='img/logo_profile.png' width={100}/></Link>
+	const logo = <Link to='/'><img alt='profile' src='/img/logo_profile.png' width={100}/></Link>
 
 	return (
 		<>
