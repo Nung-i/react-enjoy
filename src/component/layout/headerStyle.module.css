@@ -6,6 +6,10 @@
 	justify-content: space-between;
 }
 
+.headerLeft{
+
+}
+
 .logoWrap{
 	display: flex;
 	align-items: center;
@@ -13,4 +17,8 @@
 
 .title{
 	padding-left: 10px;
+}
+
+.headerRight{
+	
 }

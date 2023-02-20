@@ -1,0 +1,125 @@
+.container{
+	background-color: #141414;
+	width: 100%;
+	min-height: 1000px;
+	color: #ffffff;
+	min-width: 1903px;
+}
+
+
+/* 헤더 */
+.headerWrap{
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 14px;
+}
+
+.headerLeft{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+}
+
+.logoWrap{
+	padding: 0 40px 0 60px;
+
+}
+
+.logo{
+	display: block;
+
+}
+
+.headerMenu{
+	.item{
+		padding: 0 10px;
+		color: #ffffff;
+		text-decoration: none;
+
+		&:hover{
+			color: #a1a1a1;
+		}
+
+	}
+
+}
+
+.headerRight{
+
+}
+
+
+/* 콘텐츠 */
+.movieContentsPopular{
+	white-space: nowrap;
+	overflow-x: clip;
+
+	.title{
+		margin-left: 60px;
+	}
+
+	.carousel{
+		top: 50px;
+		left: 60px;
+		padding-left: 0;
+		min-width: 1776px;
+		margin-left: 60px;
+
+		transform: translate(0, 0);
+		transition-timing-function: ease;
+		transition-duration: 1s;
+
+		.item{
+			position: relative;
+			list-style: none;
+			display: inline-block;
+			margin: 0 5px;
+
+			.link{
+				.thumbnail{
+					display: block;
+					border-radius: 10px;
+
+				}
+
+			}
+			
+		}
+
+		.item.active{
+
+		}
+
+		.item.next{
+			.moveBtn{
+				display: none;
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 161px;
+				width: 62px;
+				padding: 0;
+				background-color: transparent;
+				border: none;
+				background-color: #000000;
+				color: #a1a1a1;
+				opacity: 0.5;
+				font-size: 70px;
+				cursor: pointer;
+
+			}
+
+			&:hover > .moveBtn{
+				display: block;
+
+			}
+
+		}
+
+	}
+
+}

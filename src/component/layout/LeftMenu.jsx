@@ -10,7 +10,9 @@ function LeftMenu({title, leftMenuItems}){
 			<h1>{title}</h1>
 			{
 				leftMenuItems.map((item, itemIndex) => (
-					<Link key={itemIndex} to={item.path}>{item.title}</Link>
+					<div key={itemIndex}>
+						<Link to={item.path}>{item.title}</Link>
+					</div>
 				))
 			}
 		</div>
