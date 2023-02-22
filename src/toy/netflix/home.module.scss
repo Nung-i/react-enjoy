@@ -94,12 +94,10 @@
 
 		}
 
-		.item.next{
+		.item{
 			.moveBtn{
 				display: none;
 				position: absolute;
-				left: 0;
-				top: 0;
 				height: 161px;
 				width: 62px;
 				padding: 0;
@@ -110,6 +108,18 @@
 				opacity: 0.5;
 				font-size: 70px;
 				cursor: pointer;
+
+			}
+
+			.prevMoveBtn{
+				right: 0;
+				top: 0;
+				
+			}
+
+			.nextMoveBtn{
+				left: 0;
+				top: 0;
 
 			}
 
